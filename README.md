@@ -67,14 +67,6 @@ A aplicação é totalmente responsiva e funciona perfeitamente em:
 - **Tablet**: Layout adaptado com reorganização de elementos
 - **Mobile**: Layout em coluna única com navegação otimizada
 
-## 🔧 Scripts Disponíveis
-
-- `npm run dev`: Inicia o servidor de desenvolvimento
-- `npm run build`: Cria a versão de produção
-- `npm run start`: Inicia o servidor de produção
-- `npm run lint`: Executa o linter ESLint
-
-
 - Enviar pull requests
 
 ## 📞 Contato
