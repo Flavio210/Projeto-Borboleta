@@ -23,7 +23,7 @@ Uma aplicação web moderna para gerenciamento de biblioteca comunitária, desen
 1. Clone o repositório:
 ```bash
 git clone <url-do-repositorio>
-cd projeto-borboleta-parte-1
+cd Projeto-Borboleta-main
 ```
 
 2. Instale as dependências:
@@ -74,15 +74,7 @@ A aplicação é totalmente responsiva e funciona perfeitamente em:
 - `npm run start`: Inicia o servidor de produção
 - `npm run lint`: Executa o linter ESLint
 
-## 📄 Licença
 
-Este projeto é desenvolvido para fins educacionais e comunitários.
-
-## 👥 Contribuição
-
-Contribuições são bem-vindas! Sinta-se à vontade para:
-- Reportar bugs
-- Sugerir melhorias
 - Enviar pull requests
 
 ## 📞 Contato
