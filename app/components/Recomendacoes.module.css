@@ -1,0 +1,120 @@
+.recomendacoes {
+    background-color: #f1f1ef;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+}
+
+.recomendacoes h1 {
+    font-family: "Epunda Slab", serif;
+    padding: 10px;
+    color: #442f21;
+}
+
+.intro {
+    text-align: center;
+    color: #63442fc9;
+}
+
+.recomendacoesContent {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.recommendationGroup {
+    background-color: var(--card);
+    border: 1px solid var(--border);
+    width: 400px;
+    border-radius: 10px;
+}
+
+.recommendationGroup h2 {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    font-size: 25px;
+    gap: 10px;
+    color: #442f21;
+    font-weight: 500;
+}
+
+.recommendationGroup h2 span { font-size: 22px; }
+
+.recommendationCard {
+    background-color: var(--cream-bg);
+    margin: 15px;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.recommendationCardContent {
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+}
+
+.recommendationCardHeader {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.recommendationCardFooter {
+    padding: 10px 0 0 0;
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+}
+
+.recCardRating {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+}
+.recCardRating .fa-solid.fa-star { color: #e8de4f; }
+
+.recCardNumber {
+    background-color: #442f21;
+    color: white;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.recCardTitle {
+    color: black;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.recCardAuthor {
+    padding: 0 40px;
+    font-size: 13px;
+    color: #63442f;
+}
+
+.recCardReads { color: #63442f; }
+
+@media (max-width: 1024px) {
+    .recomendacoesContent {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+    .recommendationGroup { width: 90%; max-width: 500px; }
+}
+
+@media (max-width: 768px) {
+    .recommendationGroup { width: 100%; }
+}
+
+

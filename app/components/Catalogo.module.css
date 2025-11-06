@@ -1,0 +1,259 @@
+/* --- CATÁLOGO SECTION --- */
+.catalogo {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.catalogo h1 {
+    font-weight: 400;
+    font-family: "Epunda Slab", serif;
+}
+
+.catalogo > p {
+    margin-top: 10px;
+    color: #442f21c1;
+    font-weight: 350;
+}
+
+.filtro {
+    margin: 30px;
+    padding: 20px;
+    display: flex;
+    background-color: #f5f4ef;
+    border: 2px solid #ecebe6;
+    width: 1200px;
+    border-radius: 10px;
+}
+
+.filtroLivro {
+    display: flex;
+    gap: 20px;
+    font-size: 13px;
+    color: #442f21;
+    align-items: center;
+}
+
+.filtroLivro span {
+    font-size: 20px;
+    color: #442f2198;
+}
+
+.filtroLivro label {
+    display: flex;
+    align-items: center;
+}
+
+.select {
+    padding: 10px;
+    width: 200px;
+    border-radius: 10px;
+    border: 2px solid #ecebe6;
+    color: #442f21;
+    background-color: white;
+}
+
+/* Book Cards */
+.bookContainer {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.bookCard {
+    margin-top: 20px;
+    background: var(--gradient-warm);
+    border: 2px solid #ecebe6;
+    border-radius: 10px;
+    width: 300px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.bookCardTop {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    align-items: center;
+    font-size: 13px;
+}
+
+.bookCategory {
+    padding: 4px 8px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: #535a56;
+    border-radius: 10px;
+    background-color: #cdd3d1;
+    font-weight: 500;
+}
+
+.bookCategory span {
+    font-size: 15px;
+}
+
+.bookStatus {
+    padding: 4px 8px;
+    color: white;
+    border-radius: 10px;
+    font-weight: 500;
+}
+
+.unavailable {
+    background-color: #eb4443;
+}
+
+.available {
+    background-color: #442f21;
+}
+
+.bookCardImage {
+    height: 200px;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bookCardImage span {
+    font-size: 40px;
+    color: #442f21;
+}
+
+.bookCardDown {
+    background-color: #f2efea;
+    padding: 20px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.bookCardText {
+    text-align: left;
+}
+
+.bookTitle {
+    font-family: "Epunda Slab", serif;
+    font-weight: 600;
+    color: black;
+    font-size: 1.1em;
+    margin-bottom: 5px;
+    font-weight: 500;
+}
+
+.bookAuthor,
+.bookDate {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 15px;
+    text-align: left;
+    color: #63442f;
+    font-weight: 400;
+}
+
+.bookAuthor span,
+.bookDate span {
+    font-size: 20px;
+}
+
+.bookDescription {
+    font-size: 14px;
+    font-weight: 360;
+    margin-top: 8px;
+    text-align: left;
+    color: #552e0d;
+}
+
+.bookRating {
+    color: #63442fd0;
+    font-size: 14px;
+    padding: 0 5px;
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.bookRating .fa-solid.fa-star {
+    color: #e8de4f;
+}
+
+.bookRating .fa-regular.fa-star {
+    color: #63442fd0;
+}
+
+.btnDetails {
+    display: flex;
+    margin: 10px auto 0 auto;
+    gap: 10px;
+    padding: 8px;
+    width: 100%;
+    border-radius: 10px;
+    border: 2px solid #ecebe6;
+    align-items: center;
+    justify-content: center;
+    color: #442f21;
+    background-color: white;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.btnDetails span {
+    font-size: 17px;
+}
+
+.btnDetails:hover {
+    background-color: #442f21;
+    color: white;
+    transition: background-color 0.2s linear, color 0.2s linear;
+}
+
+/* --- MEDIA QUERIES --- */
+@media (max-width: 1024px) {
+    .filtro {
+        width: 90%;
+        justify-content: center;
+    }
+    .filtroLivro {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .filtro {
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+        border-left: none;
+        border-right: none;
+        border-radius: 0;
+    }
+    .filtroLivro {
+        flex-direction: column;
+        align-items: stretch;
+        width: 90%;
+    }
+    .select {
+        width: 100%;
+    }
+    .bookCard {
+        width: 90%;
+        max-width: 350px;
+        height: auto;
+    }
+    .bookCardDown {
+        padding: 15px;
+    }
+}
+
+

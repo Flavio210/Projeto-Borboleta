@@ -1,0 +1,105 @@
+.heroSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    text-align: center;
+    color: white;
+    background-color: #63442f;
+}
+
+.heroContent {
+    padding: 40px;
+}
+
+.heroContent h1 {
+    width: 100%;
+    font-size: 50px;
+}
+
+.heroContent h1 span { color: #f0d589; }
+
+.heroContent p {
+    padding: 10px;
+    font-size: 20px;
+    font-weight: 350;
+}
+
+.searchBarMain {
+    width: 500px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.searchBarMain input {
+    flex-grow: 1;
+    padding: 8px;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+}
+
+.searchBarMain button {
+    padding: 6px;
+    background-color: #63442f;
+    color: white;
+    display: flex;
+    align-items: center;
+    border: none;
+    gap: 10px;
+    border: 1px solid white;
+    border-radius: 10px;
+}
+
+.searchBarMain button span { font-size: 15px; }
+
+.containerButtons {
+    padding: 20px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.containerButtons a { text-decoration: none; }
+
+.explorar,
+.recomendacoesBtn {
+    display: flex;
+    gap: 10px;
+    padding: 10px;
+    width: 200px;
+    border-radius: 10px;
+    border: none;
+    align-items: center;
+    justify-content: center;
+    color: #442f21;
+}
+
+.explorar span,
+.recomendacoesBtn span { font-size: 20px; }
+
+.explorar { background-color: #cfddd7; }
+.explorar:hover {
+    background-color: #a2ada8;
+    transition: background-color 0.2s linear, color 0.2s linear;
+    cursor: pointer;
+}
+
+.recomendacoesBtn { background-color: #f5f1e8; }
+.recomendacoesBtn:hover {
+    background-color: #cecac1;
+    transition: background-color 0.2s linear, color 0.2s linear;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .heroContent h1 { font-size: 2.2rem; }
+    .searchBarMain { width: 90%; }
+    .containerButtons { flex-direction: column; }
+    .explorar, .recomendacoesBtn { width: 250px; }
+}
+
+

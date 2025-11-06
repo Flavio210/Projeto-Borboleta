@@ -1,0 +1,152 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #f9f8f4;
+}
+
+.titulo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #6b4a32;
+}
+
+.titulo h1 {
+    font-weight: 500;
+    font-family: "Epunda Slab", serif;
+}
+
+.titulo span {
+    font-size: 40px;
+}
+
+.linkContent {
+    display: flex;
+    gap: 20px;
+    padding: 10px;
+}
+
+.linkContent a {
+    color: rgba(0, 0, 0, 0.76);
+    text-decoration: none;
+}
+
+.linkContent a:hover {
+    text-decoration: underline;
+}
+
+.searchBar {
+    padding: 6px;
+    border: 1px solid #724e34;
+    border-radius: 5px;
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+
+.searchBar input {
+    width: 230px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+}
+
+.searchBar button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.searchBar button span {
+    font-size: 20px;
+    color: #807f7c;
+    vertical-align: middle;
+}
+
+.botoes {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    text-decoration: none;
+}
+
+.login {
+    border-radius: 5px;
+    padding: 6px;
+    border: 1px solid #724e34;
+    color: #63442f;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    background-color: #f9f8f4;
+}
+
+.login span {
+    font-size: 20px;
+    color: #724e34;
+}
+
+.login:hover {
+    background-color: var(--border);
+    transition: background-color 0.2s linear, color 0.2s linear;
+    cursor: pointer;
+}
+
+.addLivro {
+    background-color: #724e34;
+    border-radius: 5px;
+    color: white;
+    padding: 8.5px;
+    border: none;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.addLivro span {
+    font-size: 15px;
+    color: white;
+}
+
+.addLivro:hover {
+    background-color: #553a26;
+    transition: background-color 0.2s linear, color 0.2s linear;
+    cursor: pointer;
+}
+
+@media (max-width: 1024px) {
+    .header {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+    .linkContent {
+        order: 3;
+        width: 100%;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+    }
+    .linkContent {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        order: 0;
+    }
+    .botoes {
+        order: 0;
+        flex-direction: column;
+        width: 100%;
+        align-items: stretch;
+    }
+    .botoes a { width: 100%; }
+    .botoes button { width: 100%; justify-content: center; }
+}
+
+
